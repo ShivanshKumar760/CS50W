@@ -1,0 +1,10 @@
+h1{
+/* this will add the style for every h1 tag */
+    color:blue;
+    text-align: center;
+}
+
+p{
+    /* to give element a color we give it a color property */
+    color:red;
+}
