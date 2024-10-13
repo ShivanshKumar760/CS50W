@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data list</title>
+</head>
+<body>
+    <div>
+        <form action="" method="">
+            <!-- input tag can contain the type of input being entered like text mail or password
+            palceholder act as the extra peice of info for user like what to enter in the box the name attribute comes handy
+            when we are implementing our own backend by giving the input field a name -->
+            <input type="text" placeholder="Enter your First name" name="FirstName">
+            <input type="text" placeholder="Enter your Last Name" name="LastName">
+            <input type="password" placeholder="Enter your password" name="Password">
+            <input type="submit" value="submit"><!--this will act as a submit button-->
+        </form>
+
+        <div>
+            <form action="" method="">
+                <label>red</label>
+                <input type="radio" name="redColor" value="red">
+                <label>blue</label>
+                <input type="radio" name="blueColor" value="blue">
+                <label>green</label>
+                <input type="radio" name="greenColor" value="green">
+            </form>
+        </div>
+
+        <div>
+            <input name="country" list="countries" placeholder="country" id="country">
+            <datalist id="countries">
+                <option value="India">India</option>
+                <option value="United State of america">United States of america</option>
+                <option value="Canada">Canada</option>
+            </datalist>
+        </div>
+    </div>
+</body>
+</html>
