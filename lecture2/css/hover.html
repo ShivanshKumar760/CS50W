@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        /* to hover over a element and change its styling property we can use a psudo class
+        
+        What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user moves the mouse over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+Style valid/invalid/required/optional form elements
+        */
+        .div1:hover{
+            background-color: blue;
+        }
+
+        .div2:hover{
+            background-color: yellow;
+        }
+
+        p{
+            display: none;
+        }
+
+        .div3:hover p{display: block;}
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>Hover over me to change color to blue</h1>
+    </div>
+
+    <div class="div2">
+        <h1>No hover over me to change the color to yellow</h1>
+    </div>
+
+    <div class="div3">
+        <h1>Hover over me to make a p tag visible</h1>
+        <p>Hello</p>
+    </div>
+    
+</body>
+</html>
