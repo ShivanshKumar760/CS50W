@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decendent Immediate</title>
+    <style>
+        /*so suppose we want to set the color of li to red one way to do is select the li selector li{color:red}
+        another way is through inheritance that is if we set the color property of ol to red it's child element will 
+        also inherit the color property*/
+        ol{
+            color:red;
+         }
+
+         /*another way is select ol  followed by the selector we want to style*/
+         ol li{
+            font-family: Arial,sans-serif;
+         }/*this is will only style the li element inside ol and no other element */
+
+
+         /*so our ol have childern and grand childern wraped in ul but what if we just want to stylise the child
+         or immediate child and not grand child for that we use this sign >*/
+
+         .ol-3 > li{
+            color : blue;
+         }
+        
+    </style>
+</head>
+<body>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <ul>
+            <li>unordered list item</li>
+        </ul>
+
+    </ol>
+        <ol>
+            <span>this is a span element inside ol</span>
+            <li>item 1 of 2nd ol</li>
+            <li>item 2 of 2nd ol</li>
+            <li>item 3 of 2nd ol</li>
+            <ul>
+                <li>unordered list item of 2nd ol</li>
+            </ul>
+    </ol>
+    <ol class="ol-3">
+        <li>item 1 of 2nd ol</li>
+        <li>item 2 of 2nd ol</li>
+        <li>item 3 of 2nd ol</li>
+        <ul>
+            <li>unordered list item of 2nd ol</li>
+        </ul>
+    </ol>
+</body>
+</html>
